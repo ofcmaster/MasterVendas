@@ -8,6 +8,7 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
     * {
@@ -107,8 +108,18 @@
     }
 
     .cta button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+      transform: scale(1.08);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+    }
+
+    /* ANIMAÇÃO ÍCONES REDES SOCIAIS */
+    .socials a {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .socials a:hover {
+      transform: scale(1.25) translateY(-5px);
+      filter: drop-shadow(0 10px 25px rgba(0,0,0,0.6));
     }
 
     footer {
@@ -163,7 +174,7 @@
     </section>
 
     <section class="cta">
-      <h2>Gostou de algum produto?</h2>
+      <h2>Entre agora em nosso canal!</h2>
       <a href="https://whatsapp.com/channel/0029VbCXsDt7oQhUaWLdDz3e" target="_blank">
         <button>Entrar em contato</button>
       </a>
@@ -172,15 +183,15 @@
     <section class="socials" style="margin-top:40px; text-align:center;">
       <h2>Siga em nossas redes sociais</h2>
       <p style="margin:15px 0; color:#d1d5db;">Acompanhe novidades, lançamentos e conteúdos exclusivos</p>
-      <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px;">
-        <a href="https://www.youtube.com/@MasterVendasOfc0" target="_blank" style="text-decoration:none;">
-          <button style="background:#ff0000;">YouTube</button>
+      <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:25px; font-size:2.5rem;">
+        <a href="https://www.youtube.com/@MasterVendasOfc0" target="_blank" title="YouTube" style="color:#ff0000;">
+          <i class="fab fa-youtube"></i>
         </a>
-        <a href="https://www.instagram.com/mastervendasofc/" target="_blank" style="text-decoration:none;">
-          <button style="background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); color:#fff;">Instagram</button>
+        <a href="https://www.instagram.com/mastervendasofc/" target="_blank" title="Instagram" style="color:#e1306c;">
+          <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.tiktok.com/@mastervendasofc0" target="_blank" style="text-decoration:none;">
-          <button style="background:#000; color:#fff;">TikTok</button>
+        <a href="https://www.tiktok.com/@mastervendasofc0" target="_blank" title="TikTok" style="color:#ffffff;">
+          <i class="fab fa-tiktok"></i>
         </a>
       </div>
     </section>
