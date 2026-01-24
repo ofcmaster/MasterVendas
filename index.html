@@ -53,10 +53,10 @@
       padding: 40px 20px;
     }
 
+    /* BENEFITS CENTRALIZADO */
     .benefits {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+      display: flex;
+      justify-content: center;
       margin-top: 40px;
     }
 
@@ -64,7 +64,9 @@
       background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(10px);
       border-radius: 16px;
-      padding: 30px;
+      padding: 35px;
+      max-width: 420px;
+      text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -75,12 +77,12 @@
 
     .card h3 {
       margin-bottom: 15px;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: #facc15;
     }
 
     .card p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       line-height: 1.6;
       color: #e5e7eb;
     }
@@ -112,7 +114,6 @@
       box-shadow: 0 18px 40px rgba(0,0,0,0.45);
     }
 
-    /* ANIMAÇÃO ÍCONES REDES SOCIAIS */
     .socials a {
       transition: transform 0.3s ease, filter 0.3s ease;
     }
@@ -141,7 +142,6 @@
 <body>
 
   <header>
-    <!-- Substitua o src pelo caminho da imagem enviada -->
     <img src="./logo-master-vendas.png" alt="Master Vendas Logo" onerror="this.style.display='none'" />
     <h1>Master Vendas</h1>
     <p>Venha conferir nossos produtos na nossa comunidade</p>
@@ -149,27 +149,14 @@
 
   <main class="container">
 
+    <!-- SOMENTE KIWIFY -->
     <section class="benefits">
-      
-
       <div class="card">
         <h3>🟣 Kiwify</h3>
-        <p>Produtos digitais disponíveis na Kiwify, com pagamento seguro, acesso rápido e suporte confiável.</p>
-      </div>
-
-      <div class="card">
-        <h3>🟡 Mercado Livre</h3>
-        <p>Anúncios ativos no Mercado Livre, oferecendo segurança, envio rápido e proteção ao comprador.</p>
-      </div>
-
-      <div class="card">
-        <h3>🟠 Shopee</h3>
-        <p>Produtos disponíveis na Shopee com preços competitivos, cupons e facilidade na compra.</p>
-      </div>
-
-      <div class="card">
-        <h3>🔵 AliExpress</h3>
-        <p>Ofertas internacionais pelo AliExpress, com variedade de produtos e opções acessíveis.</p>
+        <p>
+          Produtos digitais disponíveis na Kiwify, com pagamento seguro,
+          acesso imediato após a compra e suporte confiável.
+        </p>
       </div>
     </section>
 
